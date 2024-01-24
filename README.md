@@ -1,4 +1,7 @@
-# Taylor Series in 10 Billion Iterations
+<h1 align="center">Taylor Series in 10 Billion Iterations</h1>
+<p align="center">
+        <img src="https://github.com/mohdmot/TaylorSeries/blob/main/figure/formula.png?raw=true">
+</p>
 In this test, I implemented the Taylor series with 10 billion iterations.
 
 Naturally, this huge number of mathematical operations requires a very strong and fast programming language, so the choice fell on the **C language**
