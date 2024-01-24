@@ -137,3 +137,15 @@ plt.show()
 We notice something different here, the data is constant, and the difference is now `0.00000000008` meaning that it is `3.75` times smaller than the previous graph.
 
 **Note:** Pay attention, there is an extra zero in the difference. The zeros before the comma have become 10, they were 9.
+
+## Conclusion
+We also noticed that the values were fixed at the end, so we will do a simple search in the data to find the first time that pi was calculated as `3.1415926535`, in other words, the last repetition before our values were stop changing.
+```py
+first_found_idx = list(csv['value']).index(3.1415926535)
+print('We got the right first 11 digits of pi in the', csv['iter'][first_found_idx], 'iteration')
+```
+We got:
+```
+We got the right first 11 digits of pi in the 7235000000 iteration
+```
+Thus, we calculated the first 11 (the first 10 after the dot) as digits of pi in the Taylor series, and we were able to do this with 7235000000 iterations.
