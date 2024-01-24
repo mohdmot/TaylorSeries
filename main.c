@@ -5,7 +5,7 @@ int main () {
 	printf("Claculating Pi With Taylor Series\n");
 	double sum = 0.0;
 	//int n = 0;
-	long long iter = 4000000000LL;
+	long long iter = 10000000000LL;
 	FILE* csv = fopen("taylor.csv","a");
 	if (csv == NULL) {
 		printf("Can't write to csv !");
